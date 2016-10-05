@@ -1,0 +1,11 @@
+﻿ENDPOINTS INTEGRACION WEBPAY
+
+Modalidad : WEBSERVICE 
+Tipo Transaccion: NORMAL
+Productos: Crédito y Debito
+
+Transaccion Normal:
+https://webpay3gint.transbank.cl/WSWebpayTransaction/cxf/WSWebpayService?wsdl
+
+Anulación:
+https://webpay3gint.transbank.cl/WSWebpayTransaction/cxf/WSCommerceIntegrationService?wsdl

@@ -1,0 +1,8 @@
+Transacción Rechazada
+
+Orden de Compra XXXXXXX
+
+Las posibles causas de este rechazo son:
+- Error en el ingreso de los datos de su tarjeta (fecha y/o código de seguridad).
+- Su tarjeta no cuenta con saldo suficiente.
+- Tarjeta aun no habilita en el sistema financiero.

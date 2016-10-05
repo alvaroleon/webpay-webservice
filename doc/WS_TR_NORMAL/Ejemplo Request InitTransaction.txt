@@ -1,0 +1,11 @@
+<wsInitTransactionInput>
+     <wSTransactionType>TR_NORMAL_WS</wSTransactionType>
+     <sessionId>1234</sessionId>
+     <returnURL>http://www.test.cl/return</returnURL>
+     <finalURL>http://www.test.cl/final</finalURL>
+     <transactionDetails>
+         <amount>1990</amount>
+         <commerceCode>597020000541</commerceCode>
+         <buyOrder>100</buyOrder>
+     </transactionDetails>
+</wsInitTransactionInput>

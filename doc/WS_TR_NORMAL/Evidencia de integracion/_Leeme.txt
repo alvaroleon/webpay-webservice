@@ -1,0 +1,20 @@
+Este archivo es un esquema que señala las evidencias que debe adjuntar
+para validar su integración antes de pasar a producción.
+
+Cualquier duda, comuniquese con soporte al fono 800 44 11 44 o al 
+correo soporte@transbank.cl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CCRR 2016 - SVM */

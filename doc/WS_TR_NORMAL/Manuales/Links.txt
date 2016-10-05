@@ -1,0 +1,10 @@
+Manual general:
+https://www.transbank.cl/public/documentacion/webpay/01_Referencia_API_SOAP_Webpay_General.pdf
+
+Manual transaccion normal:
+https://www.transbank.cl/public/documentacion/webpay/02_Referencia_API_SOAP_Webpay_Transaccion_Normal.pdf
+
+Manual anulaciones:
+https://www.transbank.cl/public/documentacion/webpay/05_Referencia_API_SOAP_Webpay_Anulacion.pdf
+
+/*CCRR 2016 - SVM*/

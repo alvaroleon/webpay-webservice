@@ -1,0 +1,12 @@
+Transacción Exitosa
+
+- Número de Orden de Compra
+- Nombre del comercio
+- Monto y moneda de la transacción
+- Código de autorización de la transacción
+- Fecha de la transacción
+- Tipo de pago realizado (Débito o Crédito)
+- Tipo de cuota
+- Cantidad de cuotas
+- 4 últimos dígitos de la tarjeta bancaria
+- Descripción de los bienes y/o servicios

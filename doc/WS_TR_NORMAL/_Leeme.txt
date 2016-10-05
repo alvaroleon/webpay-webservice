@@ -1,0 +1,20 @@
+Package Webpay Webservice Transaccion Normal
+
+Contenido:
+Endpoints
+Certificados
+Evidencias de integracion
+Formatos
+Logos
+Manuales
+
+Codigo de comercio:
+597020000541
+
+Las tarjetas de prueba estan disponibles en el manual general
+de webservices en la carpeta Manuales.
+
+Cualquier duda o consulta, contactar a soporte@transbank.cl
+o al fono 800 44 11 44.
+
+/*CCRR 2016 - SVM */

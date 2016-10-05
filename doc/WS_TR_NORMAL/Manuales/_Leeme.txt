@@ -1,0 +1,17 @@
+Los manuales se incluyen como links para asegurar que
+pueda acceder a las ultimas versiones publicadas.
+
+Las tarjetas de prueba se encuentran disponibles en el manual general
+
+Cualquier duda, visite https://www.transbank.cl o contacte a soporte
+al fono 800 44 11 44 o al correo soporte@transbank.cl
+
+
+
+
+
+
+
+
+
+/*CCRR 2016 - SVM*/
