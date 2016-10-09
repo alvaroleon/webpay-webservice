@@ -88,7 +88,15 @@ class WebpayNormalTransaction
         }
     }
 
-    public function init_transaction($args)
+    /**
+     * Inicio de transacción (paso 1)
+     * @param $args
+     * @param \PDO $pdo
+     * @param string $table_name
+     * @param string $prefix_table
+     * @throws WebpayException
+     */
+    public function init_transaction($args, $pdo = null, $table_name = '', $prefix_table = '')
     {
         /**
          * @var string $order_id
@@ -138,6 +146,61 @@ class WebpayNormalTransaction
             $urlRedirect = $wsInitTransactionOutput->url;
 
             $this->token_ws = $tokenWebpay;
+
+            if (get_class($pdo) == 'PDO') {
+                $sql = "INSERT INTO {$prefix_table}{$table_name} (
+                            buy_order,
+                            payment_type_code,
+                            response_code,
+                            amount,
+                            card_number,
+                            card_exp,
+                            shares_number,
+                            auth_code,
+                            accouting_date,
+                            transaction_date,
+                            vci,
+                            commerce_code,
+                            token_ws,
+                            session_id
+                        ) VALUES (
+                            :buyOrder,
+                            :paymentTypeCode,
+                            :responseCode,
+                            :amount,
+                            :cardNumber,
+                            :cardExp,
+                            :sharesNumber,
+                            :authCode,
+                            :accoutingDate,
+                            :transactionDate,
+                            :vci,
+                            :commerceCode,
+                            :tokenWs,
+                            :sessionId
+                        )";
+
+                $stmt = $pdo->prepare($sql);
+                $empty = '';
+
+                $stmt->bindParam(':buyOrder', $this->order_id, \PDO::PARAM_STR);
+                $stmt->bindParam(':paymentTypeCode', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':responseCode', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':amount', $this->amount, \PDO::PARAM_STR);
+                $stmt->bindParam(':cardNumber', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':cardExp', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':sharesNumber', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':authCode', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':accoutingDate', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':transactionDate', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':vci', $empty, \PDO::PARAM_STR);
+                $stmt->bindParam(':commerceCode', $this->commerce_code, \PDO::PARAM_STR);
+                $stmt->bindParam(':tokenWs', $this->token_ws, \PDO::PARAM_STR);
+                $stmt->bindParam(':sessionId', $this->session_id, \PDO::PARAM_STR);
+
+                $stmt->execute();
+            }
+
             $this->render_form_redirect($urlRedirect);
         } else {
             throw new WebpayException("Bad certificate.", 6);
@@ -181,44 +244,23 @@ class WebpayNormalTransaction
             }
 
             if (get_class($pdo) == 'PDO') {
-                $sql = "INSERT INTO {$prefix_table}{$table_name} (
-                            buy_order,
-                            payment_type_code,
-                            response_code,
-                            amount,
-                            card_number,
-                            card_exp,
-                            shares_number,
-                            auth_code,
-                            accouting_date,
-                            transaction_date,
-                            vci,
-                            commerce_code,
-                            token_ws,
-                            session_id
-                        ) VALUES (
-                            :buyOrder,
-                            :paymentTypeCode,
-                            :responseCode,
-                            :amount,
-                            :cardNumber,
-                            :cardExp,
-                            :sharesNumber,
-                            :authCode,
-                            :accoutingDate,
-                            :transactionDate,
-                            :vci,
-                            :commerceCode,
-                            :tokenWs,
-                            :sessionId
-                        )";
+                $sql = "UPDATE {$prefix_table}{$table_name} wp_ws SET
+                            payment_type_code = :paymentTypeCode,
+                            response_code = :responseCode,
+                            card_number = :cardNumber,
+                            card_exp = :cardExp,
+                            shares_number = :sharesNumber,
+                            auth_code = :authCode,
+                            accouting_date = :accoutingDate,
+                            transaction_date = :transactionDate,
+                            vci = :vci
+                        WHERE wp_ws.buy_order = :buyOrder";
 
                 $stmt = $pdo->prepare($sql);
 
                 $stmt->bindParam(':buyOrder', $this->order_id, \PDO::PARAM_STR);
                 $stmt->bindParam(':paymentTypeCode', $wsTransactionDetailOutput->paymentTypeCode, \PDO::PARAM_STR);
                 $stmt->bindParam(':responseCode', $wsTransactionDetailOutput->responseCode, \PDO::PARAM_STR);
-                $stmt->bindParam(':amount', $this->amount, \PDO::PARAM_STR);
                 $stmt->bindParam(':cardNumber', $cardDetail->cardNumber, \PDO::PARAM_STR);
                 $stmt->bindParam(':cardExp', $cardDetail->cardExpirationDate, \PDO::PARAM_STR);
                 $stmt->bindParam(':sharesNumber', $wsTransactionDetailOutput->sharesNumber, \PDO::PARAM_STR);
@@ -226,9 +268,6 @@ class WebpayNormalTransaction
                 $stmt->bindParam(':accoutingDate', $transactionResultOutput->accoutingDate, \PDO::PARAM_STR);
                 $stmt->bindParam(':transactionDate', $transactionResultOutput->transactionDate, \PDO::PARAM_STR);
                 $stmt->bindParam(':vci', $transactionResultOutput->VCI, \PDO::PARAM_STR);
-                $stmt->bindParam(':commerceCode', $this->commerce_code, \PDO::PARAM_STR);
-                $stmt->bindParam(':tokenWs', $this->token_ws, \PDO::PARAM_STR);
-                $stmt->bindParam(':sessionId', $this->session_id, \PDO::PARAM_STR);
 
                 $stmt->execute();
             }
@@ -260,6 +299,34 @@ class WebpayNormalTransaction
             }
         } else {
             throw new WebpayException("Bad certificate.", 6);
+        }
+    }
+
+    /**
+     * Obtiene una orden de compra de la db
+     * @param string|int $id_or_token Puede ser el id de la orden o el token
+     * @param \PDO $pdo
+     * @param string $table_name
+     * @param string $prefix_table
+     * @return array
+     * @throws WebpayException
+     */
+    public static function get_order($id_or_token, $pdo, $table_name = 'webpay', $prefix_table = '')
+    {
+        if (get_class($pdo) != 'PDO') {
+            throw new WebpayException('PDO is required', 7);
+        }
+
+        if (is_numeric($id_or_token)) {
+            $q = $pdo->prepare("SELECT * FROM {$prefix_table}{$table_name} WHERE buy_order = '{$id_or_token}'");
+            $q->execute();
+
+            return $q->fetchAll(\PDO::FETCH_COLUMN, 0)[0];
+        } else {
+            $q = $pdo->prepare("SELECT * FROM {$prefix_table}{$table_name} WHERE token_ws = '{$id_or_token}'");
+            $q->execute();
+
+            return $q->fetchAll(\PDO::FETCH_COLUMN, 0)[0];
         }
     }
 
