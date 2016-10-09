@@ -347,7 +347,7 @@ function init_transaction() {
         echo $str;
     }
 
-    private function check_exceptions($type = 'constructor')
+    protected function check_exceptions($type = 'constructor')
     {
         if ($type == 'constructor') {
             if (!$this->args['commerce_code']) {
