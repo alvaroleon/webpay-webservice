@@ -156,8 +156,6 @@ class WebpayNormalTransaction
      */
     public function auth($data_compare, $pdo = null, $table_name = 'webpay', $prefix_table = '')
     {
-        echo $this->args['webservice_url'];
-
         $webpayService = new WebpayService($this->args['webservice_url']);
         $getTransactionResult = new getTransactionResult();
         $getTransactionResult->tokenInput = $this->token_ws;
@@ -180,7 +178,6 @@ class WebpayNormalTransaction
                 $data_compare['session_id'] != $this->session_id
             ) {
                 header("Location: {$url}?success=false");
-                echo '1';
                 return;
             }
 
