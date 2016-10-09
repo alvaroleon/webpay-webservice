@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alvar
- * Date: 05-10-2016
- * Time: 16:42
- */
-
 namespace EstudioMoca\WebpayWebService;
 
 use SoapClient,

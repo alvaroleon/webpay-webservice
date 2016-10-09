@@ -2,9 +2,8 @@
 /*ini_set('display_errors', 1);
 error_reporting(E_ALL);*/
 
+
 include '../src/autoload.php';
-
-
 
 if (!session_id()) {
     session_start();
@@ -12,7 +11,23 @@ if (!session_id()) {
 
 use EstudioMoca\WebpayWebService\WebpayService,
     EstudioMoca\WebpayWebService\wsInitTransactionInput,
-    EstudioMoca\WebpayWebService\wsTransactionDetail;
+    EstudioMoca\WebpayWebService\wsTransactionDetail,
+    \EstudioMoca\WebpayWebService\WebpayNormalTransaction;
+
+
+$wp = new WebpayNormalTransaction([
+    //'commerce_code' => '597020000541',
+    'auth_url' => 'http://localhost/webpay-webservice/test/auth.php',
+    'final_url' => 'http://localhost/webpay-webservice/test/success.php',
+]);
+
+$wp->init_transaction([
+    'session_id' => session_id(),
+    'order_id' => '1234',
+    'amount' => '1234'
+]);
+
+exit;
 
 $wsInitTransactionInput = new wsInitTransactionInput();
 $wsTransactionDetail = new wsTransactionDetail();
