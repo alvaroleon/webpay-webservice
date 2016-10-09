@@ -221,7 +221,7 @@ class WebpayNormalTransaction
                 $stmt->bindParam(':responseCode', $wsTransactionDetailOutput->responseCode, \PDO::PARAM_STR);
                 $stmt->bindParam(':amount', $this->amount, \PDO::PARAM_STR);
                 $stmt->bindParam(':cardNumber', $cardDetail->cardNumber, \PDO::PARAM_STR);
-                $stmt->bindParam(':cardExp', $cardNumber, \PDO::PARAM_STR);
+                $stmt->bindParam(':cardExp', $cardDetail->cardExpirationDate, \PDO::PARAM_STR);
                 $stmt->bindParam(':sharesNumber', $wsTransactionDetailOutput->sharesNumber, \PDO::PARAM_STR);
                 $stmt->bindParam(':authCode', $wsTransactionDetailOutput->authorizationCode, \PDO::PARAM_STR);
                 $stmt->bindParam(':accoutingDate', $transactionResultOutput->accoutingDate, \PDO::PARAM_STR);
