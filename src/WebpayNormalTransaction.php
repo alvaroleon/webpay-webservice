@@ -57,7 +57,7 @@ class WebpayNormalTransaction
      * @param string $table_name
      * @param string $prefix
      */
-    public function create_table($pdo, $table_name = 'webpay', $prefix = '')
+    public static function create_table($pdo, $table_name = 'webpay', $prefix = '')
     {
         $sql = "CREATE TABLE IF NOT EXISTS `{$prefix}{$table_name}` (
             id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
