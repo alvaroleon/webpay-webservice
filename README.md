@@ -150,8 +150,11 @@ En el caso que estos datos no coincidan con los de Transbank, se hará la redire
 2. `(PDO) $pdo`: (opcional) Objeto instancia de PDO, sirve para guardar los datos en la base de datos. En caso de que el valor
 sea nulo, no se guardarán datos en la db.
 
-_Nota: Existe un método llamado `create_table($pdo, $table_name, $prefix)` que crea la tabla necesaria para guardar los datos,
+_Nota: Existe un método estático llamado `create_table($pdo, $table_name, $prefix)` que crea la tabla necesaria para guardar los datos,
 Es necesario enviarle como parámetro una instancia de PDO._ 
+
+Puedes llamarlo así:
+`WebpayNormalTransaction::create_table()`
 
 3. `(string) $table_name`: (opcional) Es el nombre de la tabla donde se guardarán los datos.
 4. `(string) $prefix_table`: (opcional) El prefijo de la tabla.
