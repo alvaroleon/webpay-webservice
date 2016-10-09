@@ -103,7 +103,7 @@ $args = [
 
 Autentificación y validación de transacción
 -
-Como lo indica el manual de Transbank (adjunto en `doc/WS_TR_NORMAL/Manuales/05_Referencia_API_SOAP_Webpay_Anulacion.pdf`)
+Como lo indica el manual de Transbank (adjunto en `doc/WS_TR_NORMAL/Manuales/02_Referencia_API_SOAP_Webpay_Transaccion_Normal.pdf`)
 en el archivo de autentificación que creemos, se recibirá la variable `$_POST['token_ws']`, que tendrá como valor el token
 generado internamente en el paso anterior (init_transaction()).
 
