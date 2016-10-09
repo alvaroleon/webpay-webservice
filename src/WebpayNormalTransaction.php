@@ -171,7 +171,6 @@ class WebpayNormalTransaction
             $this->commerce_code = $wsTransactionDetailOutput->commerceCode;
             $this->session_id = $transactionResultOutput->sessionId;
             $cardDetail = $transactionResultOutput->cardDetail;
-            $cardNumber = $cardDetail->cardNumber;
             $this->order_id = $wsTransactionDetailOutput->buyOrder;
 
             if ($data_compare['amount'] != $this->amount || $data_compare['order_id'] != $this->order_id ||
