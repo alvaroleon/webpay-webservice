@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aed405b7-f9c7-486e-acb3-e6daf64809ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebpayNormalTransaction.php" afterPath="$PROJECT_DIR$/src/WebpayNormalTransaction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WebpaySoapClient.php" afterPath="$PROJECT_DIR$/src/WebpaySoapClient.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/auth.php" afterPath="$PROJECT_DIR$/test/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/success.php" afterPath="$PROJECT_DIR$/test/success.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.php" afterPath="$PROJECT_DIR$/test/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/autoload.php" afterPath="$PROJECT_DIR$/src/autoload.php" />
     </list>
     <ignored path="webpay-webservice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,145 +24,59 @@
     <favorites_list name="webpay-webservice" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.21771678">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="WebpayService.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WebpayService.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="WebpaySoapClient.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WebpaySoapClient.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="153">
-                    <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                    <folding />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="soap-validation.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/libs/php-wss-validation-master/wss/soap-validation.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="auth.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/auth.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="success.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/success.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/autoload.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="WebpayNormalTransaction.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/WebpayNormalTransaction.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="129" column="20" selection-start-line="129" selection-start-column="20" selection-end-line="129" selection-end-column="20" />
-                  <folding>
-                    <marker date="1475791388676" expanded="true" signature="6458:7006" ph="INSERT INTO $... " />
-                    <marker date="1475791388676" expanded="true" signature="9527:9888" ph="INSERT INTO $... " />
-                    <marker date="1475791388676" expanded="true" signature="10529:10844" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10535:10650" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10544:10642" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10574:10633" ph="{...}" />
-                    <marker date="1475791388676" expanded="true" signature="10686:10837" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10751:10829" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/test.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-493">
-                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#6#63#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="WebpayNormalTransaction.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/WebpayNormalTransaction.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="436">
-                  <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#1931#4111#0#PHP" expanded="false" />
-                    <marker date="1475791388676" expanded="true" signature="6458:7006" ph="INSERT INTO $... " />
-                    <marker date="1475791388676" expanded="true" signature="6469:7006" ph="UPDATE ${{$p... " />
-                    <marker date="1475791388676" expanded="true" signature="9527:9888" ph="INSERT INTO movies... " />
-                    <marker date="1475791388676" expanded="true" signature="10529:10686" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10529:10844" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10535:10650" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10544:10642" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10574:10602" ph="{...}" />
-                    <marker date="1475791388676" expanded="true" signature="10574:10633" ph="{...}" />
-                    <marker date="1475791388676" expanded="true" signature="10686:10737" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10686:10837" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10751:10796" ph="..." />
-                    <marker date="1475791388676" expanded="true" signature="10751:10829" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-493">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#6#63#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="612">
+                <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebpayNormalTransaction.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WebpayNormalTransaction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="133" column="43" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="43" />
+              <folding>
+                <marker date="1476046252016" expanded="true" signature="1961:2699" ph="CREATE TABLE... INTO" />
+                <marker date="1476046252016" expanded="true" signature="1961:2725" ph="CREATE TABLE... IF" />
+                <marker date="1476046252016" expanded="true" signature="1973:2699" ph="INSERT INTO $... " />
+                <marker date="1476046252016" expanded="true" signature="2850:2908" ph="ALTER TABLE `${{$prefix}}`... " />
+                <marker date="1476046252016" expanded="true" signature="7125:8367" ph="INSERT INTO $... " />
+                <marker date="1476046252016" expanded="true" signature="11189:11346" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11189:11504" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11195:11310" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11204:11302" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11234:11262" ph="{...}" />
+                <marker date="1476046252016" expanded="true" signature="11234:11293" ph="{...}" />
+                <marker date="1476046252016" expanded="true" signature="11346:11397" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11346:11497" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11411:11456" ph="..." />
+                <marker date="1476046252016" expanded="true" signature="11411:11489" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,13 +87,13 @@
         <option value="$PROJECT_DIR$/src/libs/xmlseclibs.php" />
         <option value="$PROJECT_DIR$/src/WebpayWebService.php" />
         <option value="$PROJECT_DIR$/src/WebpayService.php" />
-        <option value="$PROJECT_DIR$/src/autoload.php" />
         <option value="$PROJECT_DIR$/src/WebpaySoapClient.php" />
         <option value="$PROJECT_DIR$/test/success.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/test/test.php" />
         <option value="$PROJECT_DIR$/test/auth.php" />
         <option value="$PROJECT_DIR$/src/WebpayNormalTransaction.php" />
+        <option value="$PROJECT_DIR$/src/autoload.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -230,70 +139,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webpay-webservice" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -376,18 +222,18 @@
       <option name="presentableId" value="Default" />
       <updated>1475694508843</updated>
       <workItem from="1475694510490" duration="7144000" />
-      <workItem from="1475779680118" duration="12450000" />
+      <workItem from="1475779680118" duration="16907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19594000" />
+    <option name="totallyTimeSpent" value="24051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,20 +331,21 @@
         <state relative-caret-position="272">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#1931#4111#0#PHP" expanded="false" />
-            <marker date="1475791388676" expanded="true" signature="6458:7006" ph="INSERT INTO $... " />
-            <marker date="1475791388676" expanded="true" signature="6469:7006" ph="UPDATE ${{$p... " />
-            <marker date="1475791388676" expanded="true" signature="9527:9888" ph="INSERT INTO movies... " />
-            <marker date="1475791388676" expanded="true" signature="10529:10686" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10529:10844" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10535:10650" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10544:10642" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10574:10602" ph="{...}" />
-            <marker date="1475791388676" expanded="true" signature="10574:10633" ph="{...}" />
-            <marker date="1475791388676" expanded="true" signature="10686:10737" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10686:10837" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10751:10796" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10751:10829" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="1961:2699" ph="CREATE TABLE... INTO" />
+            <marker date="1476046252016" expanded="true" signature="1961:2725" ph="CREATE TABLE... IF" />
+            <marker date="1476046252016" expanded="true" signature="1973:2699" ph="INSERT INTO $... " />
+            <marker date="1476046252016" expanded="true" signature="2850:2908" ph="ALTER TABLE `${{$prefix}}`... " />
+            <marker date="1476046252016" expanded="true" signature="7125:8367" ph="INSERT INTO $... " />
+            <marker date="1476046252016" expanded="true" signature="11189:11346" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11189:11504" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11195:11310" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11204:11302" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11234:11262" ph="{...}" />
+            <marker date="1476046252016" expanded="true" signature="11234:11293" ph="{...}" />
+            <marker date="1476046252016" expanded="true" signature="11346:11397" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11346:11497" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11411:11456" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11411:11489" ph="..." />
           </folding>
         </state>
       </provider>
@@ -506,33 +353,6 @@
     <entry file="file://$PROJECT_DIR$/src/libs/xmlseclibs.php" />
     <entry file="file://$PROJECT_DIR$/src/libs/wse-php/soap-wsse.php" />
     <entry file="file://$PROJECT_DIR$/src/libs/wse-php/src/WSSESoap.php" />
-    <entry file="file://$PROJECT_DIR$/src/libs/php-wss-validation-master/wss/soap-validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/success.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -575,26 +395,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/php-wss-validation-master/wss/soap-validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebpayNormalTransaction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state relative-caret-position="262">
+          <caret line="133" column="43" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="43" />
           <folding>
-            <element signature="e#1931#4111#0#PHP" expanded="false" />
-            <marker date="1475791388676" expanded="true" signature="6458:7006" ph="INSERT INTO $... " />
-            <marker date="1475791388676" expanded="true" signature="6469:7006" ph="UPDATE ${{$p... " />
-            <marker date="1475791388676" expanded="true" signature="9527:9888" ph="INSERT INTO movies... " />
-            <marker date="1475791388676" expanded="true" signature="10529:10686" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10529:10844" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10535:10650" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10544:10642" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10574:10602" ph="{...}" />
-            <marker date="1475791388676" expanded="true" signature="10574:10633" ph="{...}" />
-            <marker date="1475791388676" expanded="true" signature="10686:10737" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10686:10837" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10751:10796" ph="..." />
-            <marker date="1475791388676" expanded="true" signature="10751:10829" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="1961:2699" ph="CREATE TABLE... INTO" />
+            <marker date="1476046252016" expanded="true" signature="1961:2725" ph="CREATE TABLE... IF" />
+            <marker date="1476046252016" expanded="true" signature="1973:2699" ph="INSERT INTO $... " />
+            <marker date="1476046252016" expanded="true" signature="2850:2908" ph="ALTER TABLE `${{$prefix}}`... " />
+            <marker date="1476046252016" expanded="true" signature="7125:8367" ph="INSERT INTO $... " />
+            <marker date="1476046252016" expanded="true" signature="11189:11346" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11189:11504" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11195:11310" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11204:11302" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11234:11262" ph="{...}" />
+            <marker date="1476046252016" expanded="true" signature="11234:11293" ph="{...}" />
+            <marker date="1476046252016" expanded="true" signature="11346:11397" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11346:11497" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11411:11456" ph="..." />
+            <marker date="1476046252016" expanded="true" signature="11411:11489" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="612">
+            <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
