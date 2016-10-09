@@ -1,36 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: alvar
- * Date: 05-10-2016
- * Time: 16:11
- */
-
 namespace EstudioMoca\WebpayWebService;
-
-use SoapClient;
-
-/*abstract class WebpayWebService
-{
-    protected $commercialCode;
-    protected $isCertification;
-
-    /**
-     * WebpayNormalTransaction constructor.
-     * @param string $commercialCode
-     * @param bool $isCertification
-     *
-    public function __construct($commercialCode, $isCertification = false)
-    {
-        $this->commercialCode = $commercialCode;
-        $this->isCertification = $isCertification;
-
-        $this->soapClient = new SoapClient($url, array("classmap" => self::$classmap, "trace" => true, "exceptions" => true))
-    }
-
-
-}*/
-
 
 class getTransactionResult
 {
