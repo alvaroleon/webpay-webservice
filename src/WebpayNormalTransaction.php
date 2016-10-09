@@ -30,7 +30,6 @@ class WebpayNormalTransaction
             'commerce_code' => $args['commerce_code'] ? $args['commerce_code'] : '597020000541', // For test
             'commerce_id' => $args['commerce_id'] ? $args['commerce_id'] : false, // For Mall stores
             'token_ws' => $args['token_ws'] ? $args['token_ws'] : '',
-            'action' => $args['action'] ? $args['action'] : '',
             'webservice_url' => $args['webservice_url'] ? $args['webservice_url'] : 'https://webpay3gint.transbank.cl/WSWebpayTransaction/cxf/WSWebpayService?wsdl'
         ];
 
