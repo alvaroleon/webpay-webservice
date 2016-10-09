@@ -267,7 +267,7 @@ class WebpayNormalTransaction
         }
     }
 
-    private function render_form_redirect($url)
+    protected function render_form_redirect($url)
     {
         $str = '<!doctype><html><head>
 <script>
