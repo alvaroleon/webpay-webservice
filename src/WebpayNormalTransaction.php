@@ -317,6 +317,8 @@ class WebpayNormalTransaction
             throw new WebpayException('PDO is required', 7);
         }
 
+        $id_or_token = filter_var($id_or_token, FILTER_SANITIZE_STRING);
+
         if (is_numeric($id_or_token)) {
             $q = $pdo->prepare("SELECT * FROM {$prefix_table}{$table_name} WHERE buy_order = '{$id_or_token}'");
             $q->execute();
